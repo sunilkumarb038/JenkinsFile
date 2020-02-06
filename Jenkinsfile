@@ -7,6 +7,5 @@ node()
         sh "mvn clean package"
         
     stage "Deploy Application"
-        //sh 'rm /var/lib/tomcat/webapps/nvnshoppingcart*'
         sh 'sudo cp **/*.war /opt/devops'
 }
