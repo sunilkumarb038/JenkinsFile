@@ -7,5 +7,5 @@ node()
         sh "mvn clean package"
         
     stage "Deploy Application"
-        sh 'sudo cp **/*.war /opt/devops'
+        sh 'mvn test'
 }
